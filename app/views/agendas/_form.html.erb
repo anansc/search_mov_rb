@@ -1,0 +1,17 @@
+<%= form_with(model: agenda) do |form| %>
+  <% if agenda.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(agenda.errors.count, "error") %> prohibited this agenda from being saved:</h2>
+
+      <ul>
+        <% agenda.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
