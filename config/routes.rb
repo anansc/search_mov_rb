@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "home#index"
+
+  root "home#index"
 
   resources :agenda_requests
   resources :users
