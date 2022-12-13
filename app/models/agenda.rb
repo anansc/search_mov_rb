@@ -1,2 +1,0 @@
-class Agenda < ApplicationRecord
-end

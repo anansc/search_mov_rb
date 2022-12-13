@@ -1,2 +1,0 @@
-class AgendaRequest < ApplicationRecord
-end
