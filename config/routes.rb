@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: "home#index"
+
   resources :agenda_requests
   resources :users
   resources :agendas
