@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @agenda_request %>
+
+<div>
+  <%= link_to "Edit this agenda request", edit_agenda_request_path(@agenda_request) %> |
+  <%= link_to "Back to agenda requests", agenda_requests_path %>
+
+  <%= button_to "Destroy this agenda request", @agenda_request, method: :delete %>
+</div>
